@@ -19,3 +19,15 @@ export const printHelp = () => {
             -t [API_KEY]    Save tocken
     `);
 };
+
+export const printWeather = (res, icon) => {
+    console.log(
+		dedent`
+            ${icon}  ${res.weather[0].description}
+            City: ${res.name}
+            Temp: ${res.main.temp}°
+            Feels like: ${res.main.feels_like}°
+            Humidity: ${res.main.humidity}%
+            Wind speed: ${res.wind.speed}m/s
+    `); 
+}
