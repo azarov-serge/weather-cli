@@ -1,6 +1,6 @@
 import { homedir } from 'os';
-import { join, basename } from 'path';
-import { promises, writeFile } from 'fs';
+import { join } from 'path';
+import { promises } from 'fs';
 
 const filePath = join(homedir(), 'weather-data.json');
 

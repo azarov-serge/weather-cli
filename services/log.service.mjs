@@ -13,9 +13,9 @@ export const printHelp = () => {
 	console.log(
 		dedent`
             ${chalk.bgCyan('HELP')}
-            Без параметров - вывод погоды
-            -s [CITY] для установки города
-            -h для вывода помощи
-            -t [API_KEY] для сохранения токена
+            No parameters - weather output
+            -s [CITY]       Set the city
+            -h              Show this message
+            -t [API_KEY]    Save tocken
     `);
 };
